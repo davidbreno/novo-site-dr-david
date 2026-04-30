@@ -5,3 +5,5 @@ server.err
 server.log
 Thumbs.db
 Desktop.ini
+
+.vercel
