@@ -1,0 +1,7 @@
+.codex-run/
+*.pid
+server.out
+server.err
+server.log
+Thumbs.db
+Desktop.ini
