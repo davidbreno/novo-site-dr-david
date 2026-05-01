@@ -10,7 +10,51 @@
       href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;700&family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=2" />
+    <style>
+      :root {
+        --text: #f7f4ee;
+        --muted: rgba(232, 226, 216, 0.72);
+        --accent: #d8b36a;
+        --accent-strong: #f0c978;
+        --panel: rgba(10, 10, 12, 0.72);
+        --section-bg:
+          linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.78)),
+          repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0 2px, rgba(255, 255, 255, 0.03) 2px 5px, rgba(0, 0, 0, 0.36) 5px 9px, rgba(0, 0, 0, 0.8) 9px 13px),
+          radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.16), transparent 34%),
+          radial-gradient(circle at 50% 100%, rgba(2, 4, 14, 0.82), transparent 36%),
+          linear-gradient(135deg, #242428 0%, #0d0d11 48%, #010104 100%);
+      }
+
+      body,
+      .hero,
+      .intro-section,
+      .bio-section,
+      .procedures-section,
+      .contact-section {
+        background: var(--section-bg) !important;
+        background-attachment: fixed !important;
+      }
+
+      .top-nav {
+        background: rgba(6, 6, 8, 0.78) !important;
+        border-bottom-color: rgba(216, 179, 106, 0.22) !important;
+      }
+
+      .hero-title p,
+      .intro-kicker,
+      .bio-content h2,
+      .procedures-section p,
+      .contact-accent {
+        color: var(--accent-strong) !important;
+      }
+
+      .bio-button,
+      .contact-cta {
+        background: linear-gradient(135deg, #d8b36a, #f0c978) !important;
+        color: #15110a !important;
+      }
+    </style>
   </head>
   <body>
     <header class="top-nav" aria-label="Navegacao principal">
